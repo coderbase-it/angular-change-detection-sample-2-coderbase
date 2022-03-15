@@ -1,0 +1,18 @@
+Name: <input type="text" [(ngModel)]="person.name" />
+<br />
+Age:
+<button (click)="person.age = person.age + 1">+</button>
+{{ person.age }}
+<button (click)="person.age = person.age - 1">-</button>
+<br />
+
+<hello [person]="person"></hello>
+<br />
+<pre><code>
+{{ person | json}}
+</code></pre>
+
+<p>
+  Vous devez faire en sorte que le composant Hello affiche correctement les
+  informations saisie
+</p>
